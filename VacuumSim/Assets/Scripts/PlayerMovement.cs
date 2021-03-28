@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float camSpeedH = 5.0f;
     private float rot = 0.0f;
 
-    //public Rigidbody rb;
+    public Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -25,21 +25,21 @@ public class PlayerMovement : MonoBehaviour
         // If 'W' go forward
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += transform.forward * Time.deltaTime * speed;
+            rb.transform.position += rb.transform.forward * Time.deltaTime * speed;
             print("forward: " + transform.forward);
         }
         // ASD etc
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position -= transform.forward * Time.deltaTime * speed;
+            rb.transform.position -= rb.transform.forward * Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position -= transform.right * Time.deltaTime * speed;
+            rb.transform.position -= rb.transform.right * Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += transform.right * Time.deltaTime * speed;
+            rb.transform.position += rb.transform.right * Time.deltaTime * speed;
         }
 
         // Rotate camera toward cursor
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         //rb.transform.rotation = Quaternion.Euler(new Vector3(0f, -angle, 0f));
         rot += camSpeedH * Input.GetAxis("Mouse X");
         //transform.eulerAngles = new Vector3(0.0f, rot, 0.0f);
-        transform.rotation = Quaternion.Euler(new Vector3(0f, rot, 0f));
+        rb.transform.rotation = Quaternion.Euler(new Vector3(0f, rot, 0f));
 
     }
 
