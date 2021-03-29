@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             rb.transform.position += rb.transform.forward * Time.deltaTime * speed;
-            print("forward: " + transform.forward);
+            //print("forward: " + transform.forward);
         }
         // ASD etc
         if (Input.GetKey(KeyCode.S))
