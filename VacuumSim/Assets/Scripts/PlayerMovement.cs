@@ -22,6 +22,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //END GAME
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         // If 'W' go forward
         if (Input.GetKey(KeyCode.W))
         {
