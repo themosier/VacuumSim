@@ -8,6 +8,7 @@ public class CollisionDestroy : MonoBehaviour
 {
     public Canvas canvas;
     public Text candyCtrText;
+    public AudioSource candySound;
     private int candyCtr = 0;
 
     // Start is called before the first frame update
@@ -29,7 +30,7 @@ public class CollisionDestroy : MonoBehaviour
         {
             Destroy(col.gameObject);
             candyCtr++;
-            print("Destroy 2");
+            candySound.Play();
         }
     }
 }
