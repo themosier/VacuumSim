@@ -24,10 +24,11 @@ public class CollisionDestroy : MonoBehaviour
         candyCtrText.text = candyCtr + " / 60";
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {;
         if (col.gameObject.tag == "item")
         {
+            Debug.Log("Kill " + col.gameObject.name + (candyCtr + 1));
             Destroy(col.gameObject);
             candyCtr++;
             candySound.Play();

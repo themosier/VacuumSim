@@ -15,17 +15,17 @@ PrefabInstance:
     - target: {fileID: 67603522178227566, guid: e8b117ce07e761242a42fde3dca308ba,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.601
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 67603522178227566, guid: e8b117ce07e761242a42fde3dca308ba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.67
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 67603522178227566, guid: e8b117ce07e761242a42fde3dca308ba,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.561157
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 67603522178227566, guid: e8b117ce07e761242a42fde3dca308ba,
         type: 3}
@@ -62,10 +62,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 538906343520546339, guid: e8b117ce07e761242a42fde3dca308ba,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 845548249003575252, guid: e8b117ce07e761242a42fde3dca308ba,
         type: 3}
       propertyPath: m_Name
-      value: MnM Variant 1
+      value: Green M&M
       objectReference: {fileID: 0}
     - target: {fileID: 1205559349135566337, guid: e8b117ce07e761242a42fde3dca308ba,
         type: 3}

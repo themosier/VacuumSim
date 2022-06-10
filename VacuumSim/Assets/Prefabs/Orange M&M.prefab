@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5085825379732799161, guid: ba5a1f8618836114c81669d10280b7ba,
         type: 3}
       propertyPath: m_Name
-      value: MnM Variant 3
+      value: Orange M&M
       objectReference: {fileID: 0}
     - target: {fileID: 5611392296597840899, guid: ba5a1f8618836114c81669d10280b7ba,
         type: 3}
@@ -20,17 +20,17 @@ PrefabInstance:
     - target: {fileID: 5611392296597840899, guid: ba5a1f8618836114c81669d10280b7ba,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.601
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611392296597840899, guid: ba5a1f8618836114c81669d10280b7ba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.67
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611392296597840899, guid: ba5a1f8618836114c81669d10280b7ba,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.561157
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611392296597840899, guid: ba5a1f8618836114c81669d10280b7ba,
         type: 3}
