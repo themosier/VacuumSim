@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class CollisionDestroy : MonoBehaviour
 {
     public Canvas canvas;
     public Text candyCtrText;
+    public TextMeshProUGUI gameOverText;
     public AudioSource candySound;
     private int candyCtr = 0;
+    public int candyMax;
 
     // Start is called before the first frame update
     void Start()
     {
         canvas.gameObject.SetActive(true);
-        candyCtrText.text = candyCtr + " / 60";
+        candyCtrText.text = candyCtr + " / " + candyMax;
     }
 
     // Update is called once per frame
     void Update()
     {
-        candyCtrText.text = candyCtr + " / 60";
+        candyCtrText.text = candyCtr + " / " + candyMax;
     }
 
     void OnTriggerEnter(Collider col)
@@ -32,6 +35,10 @@ public class CollisionDestroy : MonoBehaviour
             Destroy(col.gameObject);
             candyCtr++;
             candySound.Play();
+        }
+        if (candyCtr >= candyMax)
+        {
+            gameOverText.gameObject.SetActive(true);
         }
     }
 }

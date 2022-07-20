@@ -9,11 +9,11 @@ public class InstantiatePrefab : MonoBehaviour
     private IEnumerator spawn()
     {    
         Vector3 pos = new Vector3(0.0f, 7.5f, 0.0f);
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 15; i++)
         {
             yield return new WaitForSeconds(.01f);
-            pos.x = Random.Range(4.5f, 5.5f);
-            pos.z = Random.Range(4.5f, 5.5f);
+            pos.x = Random.Range(4.7f, 5.2f);
+            pos.z = Random.Range(4.7f, 5.2f);
             Instantiate(prefab, pos, Quaternion.identity);
             Debug.Log("Spawn " + prefab.name + i);
         }
